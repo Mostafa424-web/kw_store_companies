@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kw_store_companies/core/assets.dart';
 import 'package:kw_store_companies/core/styles.dart';
 import 'package:kw_store_companies/features/companies/presentation/view/widgets/contacts_company.dart';
 import 'package:kw_store_companies/features/companies/presentation/view/widgets/tabs.dart';
@@ -7,15 +6,19 @@ import 'package:kw_store_companies/features/companies/presentation/view/widgets/
 import '../../../../core/app_constance.dart';
 
 class CompanyDetails extends StatelessWidget {
-  const CompanyDetails({Key? key}) : super(key: key);
+  const CompanyDetails(
+      {Key? key, required this.companyName, required this.companyImage})
+      : super(key: key);
 
+  final String companyName;
+  final String companyImage;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.only(top: 20.0, left: 18, right: 18),
         child: ListView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           children: [
             const Directionality(
               textDirection: TextDirection.ltr,
@@ -27,13 +30,13 @@ class CompanyDetails extends StatelessWidget {
             buildSizedHeight(30),
             Center(
               child: Image.asset(
-                AssetsData.logoExcite,
+                companyImage,
               ),
             ),
             buildSizedHeight(10),
-            const Center(
+            Center(
               child: Text(
-                'اكسايت',
+                companyName,
                 style: Styles.textStyle24,
               ),
             ),

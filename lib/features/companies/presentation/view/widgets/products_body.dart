@@ -24,7 +24,7 @@ class ProductBody extends StatelessWidget {
               Stack(
                 children: [
                   const ImageProduct(
-                    image: AssetsData.iphone1Image,
+                    image: AssetsData.laptopImage,
                   ),
                   IconButton(
                     padding: const EdgeInsets.only(left: 120),
@@ -43,7 +43,7 @@ class ProductBody extends StatelessWidget {
               Stack(
                 children: [
                   const ImageProduct(
-                    image: AssetsData.laptopImage,
+                    image: AssetsData.iphone1Image,
                   ),
                   IconButton(
                     padding: const EdgeInsets.only(left: 120),
@@ -66,7 +66,7 @@ class ProductBody extends StatelessWidget {
               Stack(
                 children: [
                   const ImageProduct(
-                    image: AssetsData.iphone1Image,
+                    image: AssetsData.airpodsImage,
                   ),
                   IconButton(
                     padding: const EdgeInsets.only(left: 120),
@@ -85,7 +85,7 @@ class ProductBody extends StatelessWidget {
               Stack(
                 children: [
                   const ImageProduct(
-                    image: AssetsData.laptopImage,
+                    image: AssetsData.iphone2Image,
                   ),
                   IconButton(
                     padding: const EdgeInsets.only(left: 120),

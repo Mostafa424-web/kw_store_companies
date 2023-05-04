@@ -28,7 +28,10 @@ class CompanyListView extends StatelessWidget {
                       Navigator.push(
                         (context),
                         MaterialPageRoute(
-                          builder: (context) => const CompanyDetails(),
+                          builder: (context) => CompanyDetails(
+                            companyImage: companies[index].image,
+                            companyName: companies[index].name,
+                          ),
                         ),
                       );
                     },
