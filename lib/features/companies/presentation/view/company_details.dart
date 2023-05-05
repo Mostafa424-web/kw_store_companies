@@ -33,7 +33,9 @@ class CompanyDetails extends StatelessWidget {
                 companyImage,
               ),
             ),
-            buildSizedHeight(10),
+            const SizedBox(
+              height: 10,
+            ),
             Center(
               child: Text(
                 companyName,
